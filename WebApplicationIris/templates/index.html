@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris Flower Prediction</title>
+</head>
+<body>
+
+    <h2>Iris Flower Prediction</h2>
+    <form action="/predict" method="post">
+        <h4>Caratteristiche del sepalo</h4>
+        <label for="sepal_lenght">Lunghezza sepalo: </label>
+        <input type="text" id="sepal_lenght" name="sepal_lenght"><br>
+        <label for="sepal_width">Larghezza sepalo: </label>
+        <input type="text" id="sepal_width" name="sepal_width"><br><br>
+
+        <h4>Caratteristiche del petalo: </h4>
+        <label for="petal_lenght">Lunghezza petalo: </label>
+        <input type="text" id="petal_lenght" name="petal_lenght"><br>
+        <label for="petal_widht">Lunghezza petalo: </label>
+        <input type="text" id="petal_widht" name="petal_width"><br><br>
+
+        <input type="submit"value="Predict">
+
+    </form>
+
+</body>
+</html>

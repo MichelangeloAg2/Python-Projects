@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <style>
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Risultati</h2>
+    <p>Il fiore Iris predetto è di tipo: {{ prediction }}</p>
+    <!--Costrutto logico di Python per inserire l'immagine-->
+    {% if prediction== 'Setosa'%}
+        <img src="{{ url_for('static', filename='iris_setosa.png')}}" alt="Setosa">
+    {% elif prediction == 'Versicolor' %}
+        <img src="{{ url_for('static', filename='iris_versicolor.png') }}" alt="Versicolor">
+    {% elif prediction == 'Virginica' %}
+        <img src="{{ url_for('static', filename='iris_virginica.png') }}" alt="Virginica">
+    {% endif %}
+
+
+</body>
+</html>
